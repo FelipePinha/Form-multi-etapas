@@ -6,5 +6,9 @@ declare module "styled-components" {
             fontFamily: string;
             fontSize: string;
         };
+        colors: {
+            blue: string;
+            white: string;
+        };
     }
 }
