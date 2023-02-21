@@ -5,11 +5,13 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 0.4rem;
+    margin-top: 1.4rem;
 `;
 
 export const Button = styled.button`
-    background-color: ${(props) => props.theme.colors.blue};
+    background-color: ${(props) =>
+        props.disabled ? props.theme.colors.grey : props.theme.colors.blue};
+
     color: ${(props) => props.theme.colors.white};
     border: none;
     border-radius: 1rem;
@@ -18,6 +20,6 @@ export const Button = styled.button`
     transition: filter 0.3s ease-in-out;
 
     &:hover {
-        filter: brightness(1.1);
+        filter: ${(props) => (props.disabled ? "" : "brightness(1.1)")};
     }
 `;

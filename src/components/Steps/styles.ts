@@ -8,9 +8,21 @@ export const Container = styled.div`
     cursor: default;
 `;
 
-export const StepBox = styled.span`
+interface SetpBoxProps {
+    stepSelected: boolean;
+}
+
+export const StepBox = styled.span<SetpBoxProps>`
     padding: 1rem 3rem;
     border-radius: 1rem;
-    background-color: ${(props) => props.theme.colors.grey};
+    color: ${(props) =>
+        props.stepSelected ? props.theme.colors.white : "#000"};
+
+    background-color: ${(props) =>
+        props.stepSelected ? props.theme.colors.blue : props.theme.colors.grey};
+
     font-size: ${(props) => props.theme.fontStyles.fontSize};
+    transform: scale(${(props) => (props.stepSelected ? "1.2" : "")});
+
+    transition: all 0.1s ease-in-out;
 `;
