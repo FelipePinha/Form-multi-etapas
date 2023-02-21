@@ -13,7 +13,7 @@ export const Button = styled.button`
     color: ${(props) => props.theme.colors.white};
     border: none;
     border-radius: 1rem;
-    padding: 1.3rem 3rem;
+    padding: 1.6rem 4rem;
     cursor: pointer;
     transition: filter 0.3s ease-in-out;
 

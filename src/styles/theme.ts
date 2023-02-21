@@ -8,6 +8,7 @@ const theme: DefaultTheme = {
     colors: {
         blue: "#0FB2F2",
         white: "#F2F2F2",
+        grey: "#bdbdbd",
     },
 };
 
