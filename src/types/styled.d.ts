@@ -5,11 +5,13 @@ declare module "styled-components" {
         fontStyles: {
             fontFamily: string;
             fontSize: string;
+            bold: string;
         };
         colors: {
             blue: string;
             white: string;
             grey: string;
+            bg_body: string;
         };
     }
 }

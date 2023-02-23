@@ -5,6 +5,6 @@ interface FormProps {
     children: ReactNode;
 }
 
-export const Form = ({ children }: FormProps) => {
+export const FormBox = ({ children }: FormProps) => {
     return <C.Container>{children}</C.Container>;
 };

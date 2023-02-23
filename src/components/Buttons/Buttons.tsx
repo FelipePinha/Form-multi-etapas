@@ -1,3 +1,4 @@
+import { SetStateAction, Dispatch } from "react";
 import useSteps from "../../hooks/useSteps";
 import * as C from "./styles";
 
@@ -8,7 +9,7 @@ export const Buttons = () => {
         if (step === 1) {
             return;
         } else {
-            setStep(step - 1);
+            setStep((prev) => prev - 1);
         }
     };
 
@@ -16,7 +17,7 @@ export const Buttons = () => {
         if (step === 3) {
             return;
         } else {
-            setStep(step + 1);
+            setStep((prev) => prev + 1);
         }
     };
 
