@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,6 +14,7 @@ export const Container = styled.div`
 `;
 
 export const FieldWrapper = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -30,5 +32,5 @@ export const Input = styled.input`
     border-radius: 0.5rem;
     padding: 1.6rem 1.5rem;
     font-size: 1.6rem;
-    background-color: ${(props) => props.theme.colors.bg_body};
+    background-color: ${(props) => props.theme.colors.white};
 `;

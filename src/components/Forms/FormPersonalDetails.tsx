@@ -9,8 +9,12 @@ export const FormPersonalDetails = () => {
                 <C.Input type="text" placeholder="digite seu nome" />
             </C.FieldWrapper>
             <C.FieldWrapper>
-                <C.Label>Idade</C.Label>
-                <C.Input type="number" placeholder="digite sua Idade" />
+                <C.Label>CPF</C.Label>
+                <C.Input type="text" placeholder="digite seu CPF" />
+            </C.FieldWrapper>
+            <C.FieldWrapper>
+                <C.Label>Celular</C.Label>
+                <C.Input type="number" placeholder="digite seu Número" />
             </C.FieldWrapper>
         </C.Container>
     );

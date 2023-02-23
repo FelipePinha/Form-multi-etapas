@@ -9,6 +9,10 @@ export const FormAccount = () => {
                 <C.Input type="text" placeholder="insira seu email" />
             </C.FieldWrapper>
             <C.FieldWrapper>
+                <C.Label>Confirme Email</C.Label>
+                <C.Input type="text" placeholder="Confirme seu email" />
+            </C.FieldWrapper>
+            <C.FieldWrapper>
                 <C.Label>Senha</C.Label>
                 <C.Input type="password" placeholder="digite sua senha" />
             </C.FieldWrapper>
